@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mcdonald.css"/>
+
+    <title>McDonald's Order Processing</title>
+</head>
+<body>
+    <div class = "system">
+        <h2>Mcdonald System</h2>
+        <div class="Button_Container">
+            <button class="New_Normal_Order" onclick="createOrder('Normal')">New Normal Order</button>
+            <button class="New_VIP_Order" onclick="createOrder('VIP')">New VIP Order</button>
+            <button class="addBot" onclick="createBot()">+Bot</button>
+            <button class="reduceBot" onclick="popBot()">-Bot</button>
+        </div>
+    
+    <div class="header_container">
+        <div class="header-table">
+            <table class = "header" border = "1">
+                <th style="width: 30%;">PENDING</th>
+                <th style="width: 40%;">PROCESSING</th>
+                <th style="width: 30%;">COMPLETE</th>
+            </table>
+        </div>
+    </div>
+    <div class="body_container">
+            <div class="PENDING-table">
+                <table class="body" id="PENDING-body">
+                </table>
+            </div>
+            <div class="PROCESSING-table">
+                <table class = "body" id = "PROCESSING-body">
+                </table>
+            </div>
+            <div class="COMPLETE-table">
+                <table class = "body" id = "COMPLETE-body" >
+                </table>
+            </div>
+    </div>
+    <div id = "TextBox"></div>
+    </div>
+    <script src="Mcdonald.js"></script>
+</body>
+</html>
